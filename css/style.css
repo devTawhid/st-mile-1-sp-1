@@ -1,0 +1,58 @@
+/* Global css */
+:root{
+    /* color section */
+    --primary-color: #A43F49;
+    --secondary-color: #ffffff;
+
+    /* font size section */
+    --h1-size: 35px;
+    --h2-size: 30px;
+    --p-size: 16px;
+
+    /* font family section */
+    --h-family: 'Raleway', sans-serif;
+    --p-family: 'Roboto', sans-serif;
+}
+
+*, ::after, :before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    font-family: var(--h-family);
+    color: var(--secondary-color);
+}
+h1{
+    font-size:  var(--h1-size);
+}
+h2{
+    font-size: var(--h2-size);
+}
+h3{
+    font-size: var(--h3-size);
+}
+p{
+    font-size: var(--p-size);
+    color: var(--secondary-color);
+    font-family: var(--p-family);
+}
+.fa{
+    color: var(--secondary-color);
+}
+/* Global css end */
+
+/* navigation section starts */
+/* navigation section ends */
+
+/* about me section starts */
+/* about me section ends  */
+
+/* skill section starts */
+/* skill section ends */
+
+/* work section starts */
+/* work section ends */
+
+/* contact-me section starts */
+/* contact-me section ends */
