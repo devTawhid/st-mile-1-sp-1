@@ -58,6 +58,21 @@ a{
     font-weight: bold;
     font-family: var(--p-family);
 }
+body{
+    background-image: url(/image/section-bg.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+img{
+    border-radius: 5px;
+}
+::placeholder{
+    color: white;
+    font-size: 20px;
+    font-family: var(--p-family);
+}
 /* Global css end */
 
 /* Grid system starts */
@@ -180,18 +195,18 @@ html{
 
 /* about me section starts */
 .about-me{
-    background-image: url(/image/section-bg.png);
+    /* background-image: url(/image/section-bg.png); */
 }
-.about-me .overlay .container .row .headings{
+.overlay .container .row .headings{
     display: flex;
     flex-flow: column;
     align-items: center;
 }
-.about-me .overlay .container .row .headings h1{
+.overlay .container .row .headings h1{
     margin-top: 50px;
     border-bottom: 3px solid var(--primary-color);
 }
-.about-me .overlay .container .row .headings p{
+.overlay .container .row .headings p{
     text-align: center;
     margin-top: 15px;
 }
@@ -224,10 +239,71 @@ html{
 /* about me section ends  */
 
 /* skill section starts */
+.skills{
+}
+.skills .overlay .container .row .skill-parent-top{
+    margin-top: 50px;
+}
+.skills .overlay .container .row .skill-parent{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between
+}
+.skills .overlay .container .row .skill-parent .skill{
+    background-color: rgba(255, 255, 255, 0.27);
+    width: 49%;
+    padding: 50px;
+    border-radius: 5px;
+    transition: .5s all ease-in-out;
+}
+.skills .overlay .container .row .skill-parent .skill:hover{
+    background-color: rgba(255, 255, 255, 0.534);
+}
+.skills .overlay .container .row .skill-parent .skill .fa{
+    font-size: 50px;
+}
+.skills .overlay .container .row .skill-parent .skill h3{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.skills .overlay .container .row .skill-parent .skill p{
+    font-weight: 200;
+}
 /* skill section ends */
 
 /* work section starts */
+.work .overlay .container .row .work-parent{
+    margin-top: 50px;
+}
+.work .overlay .container .row .work-parent .works{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
 /* work section ends */
 
-/* contact-me section starts */
+/* contact-me section starts form design */
+.contact-me .overlay .container .row .contact-form{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.contact-me .overlay .container .row .contact-form .form-group{
+    display: flex;
+}
+.contact-me .overlay .container .row .contact-form .form-group .form-control{
+    background-color: rgba(255, 255, 255, 0.28);
+    display: inline-block;
+    border: 2px solid white;
+    line-height:30px;
+    border-radius: 5px;
+    color: white;
+    padding: 0 10px;
+    width:100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* contact-me section ends */
