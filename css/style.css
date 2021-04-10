@@ -37,12 +37,90 @@ p{
     color: var(--secondary-color);
     font-family: var(--p-family);
 }
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-family: var(--h-family);
+}
+
 .fa{
     color: var(--secondary-color);
 }
 /* Global css end */
 
 /* navigation section starts */
+.nav{
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 268.91px;
+    height: 580px;
+    left: 114.09px;
+    top: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+}
+.profile .profile-picture{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.profile .name{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.profile .name p{
+    margin-top: 5px;
+}
+.nav .nav-items{
+    width:100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.nav .nav-items a{
+    padding: 10px 0 10px ;
+    width:100%;
+    text-align: center;
+    font-weight: 600;
+    border-top: 1px solid white;
+}
+.nav .nav-items a:active, a:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+.nav .socials{
+    margin-top: 5px;
+}
+.nav .socials a{
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.329);
+    min-width: 35px;
+    min-height: 35px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 2px 0;
+    padding: 5px;
+}
+.nav .socials a:hover{
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.nav .socials a i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .copy-right{
+    border-top: 1px solid white;
+    margin-top: 60px;
+}
 /* navigation section ends */
 
 /* about me section starts */
